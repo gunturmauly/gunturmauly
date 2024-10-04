@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Kotak</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: url('7777.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .container {
+            display: flex;
+            gap: 30px;
+            z-index: 1;
+        }
+
+        .menu-box {
+            width: 200px;
+            height: 200px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            border-radius: 15px;
+            text-align: center;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.4s ease, background-color 0.4s ease;
+            background-size: cover;
+            position: relative;
+            opacity: 0;
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        /* Animasi Muncul */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Gambar Latar Belakang Khusus untuk Setiap Kotak */
+        .menu-box:nth-child(1) {
+            background-image: url('cuyo.jpg');
+        }
+
+        .menu-box:nth-child(2) {
+            background-image: url('1728024856-picsay.jpg');
+        }
+
+        .menu-box:nth-child(3) {
+            background-image: url('1728024856-picsay.jpg');
+        }
+
+        .menu-box:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            transform: scale(1.1);
+        }
+    </style>
+    <!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="overlay"></div>
+
+    <div class="container">
+        <a href="https://gunturmauly.github.io/Jumlah-Po-ke-Produksi-/" class="menu-box">RENCANA PRODUKSI</a>
+        <a href="https://gunturmauly.github.io/Material-ke-part/" class="menu-box">MATERIAL KE PART</a>
+        <a href="https://gunturmauly.github.io/Part-ke-material/" class="menu-box">PART KE MATERIAL</a>
+    </div>
+
+</body>
+</html>
