@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu GunturMauly</title>
+    <title>Menu Guntur Mauly</title>
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -75,28 +75,68 @@
             transform: scale(1.1);
         }
 
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 2;
+        }
+
+        .logo img {
+            width: 150px;
+            height: auto;
+        }
+
         .footer {
             margin-top: 20px;
             font-size: 16px;
             color: white;
             z-index: 1;
+            text-align: center;
         }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons img {
+            margin: 0 10px;
+            width: 40px;
+            height: 40px;
+            transition: opacity 0.3s;
+        }
+
+        .social-icons img:hover {
+            opacity: 0.7;
+        }
+
     </style>
-    <!-- Import Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <!-- Logo di Kiri Atas -->
+    <div class="logo">
+        <img src="7777.jpg" alt="Logo GunturMauly">
+    </div>
+
     <div class="overlay"></div>
 
+    <!-- Kontainer Menu -->
     <div class="container">
         <a href="https://gunturmauly.github.io/Jumlah-Po-ke-Produksi-/" class="menu-box">RENCANA PRODUKSI</a>
         <a href="https://gunturmauly.github.io/Material-ke-part/" class="menu-box">MATERIAL KE PART</a>
         <a href="https://gunturmauly.github.io/Part-ke-material/" class="menu-box">PART KE MATERIAL</a>
     </div>
 
+    <!-- Footer dan Deskripsi -->
     <div class="footer">
-        by GunturMauly
+        by Guntur Mauly
+        <div class="social-icons">
+            <!-- Tambahkan ikon media sosial dengan gambar dari URL -->
+            <a href="https://facebook.com/gunturmauly" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a>
+            <a href="https://wa.me/628976809520" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"></a>
+            <a href="https://instagram.com/iyaatur" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+        </div>
     </div>
 
 </body>
